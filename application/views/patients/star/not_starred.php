@@ -1,0 +1,1 @@
+<?php echo ajax_anchor(get_uri("patients/add_remove_star/" . $patient_id."/add"), "<i class='fa fa-star-o star-btn'></i>", array("data-real-target" => "#star-mark"));
