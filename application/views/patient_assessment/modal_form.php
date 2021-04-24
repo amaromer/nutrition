@@ -1,11 +1,17 @@
+<style>
+    .modal-dialog {
+        width: 800px;
+    }
+</style>
 <?php echo form_open(get_uri("patient_assessment/add_patient_assessment"), array("id" => "patient_assessment-form", "class" => "general-form", "role" => "form")); ?>
 <div class="modal-body clearfix">
 
     <div class="form-widget">
         <div class="widget-title clearfix">
-            <div id="general-info-label" class="col-sm-4"><i class="fa fa-circle-o"></i><strong> <?php echo "Step 1"; ?></strong></div>
-            <div id="job-info-label" class="col-sm-4"><i class="fa fa-circle-o"></i><strong>  <?php echo "Step 2"; ?></strong></div>
-            <div id="account-info-label" class="col-sm-4"><i class="fa fa-circle-o"></i><strong>  <?php echo "Step 3"; ?></strong></div> 
+            <div id="step1-label" class="col-sm-3"><i class="fa fa-circle-o"></i><strong> <?php echo "Step 1"; ?></strong></div>
+            <div id="step2-label" class="col-sm-3"><i class="fa fa-circle-o"></i><strong>  <?php echo "Step 2"; ?></strong></div>
+            <div id="step3-label" class="col-sm-3"><i class="fa fa-circle-o"></i><strong>  <?php echo "Step 3"; ?></strong></div>
+            <div id="step4-label" class="col-sm-3"><i class="fa fa-circle-o"></i><strong>  <?php echo "Step 4"; ?></strong></div> 
         </div>
 
         <div class="progress ml15 mr15">
@@ -15,14 +21,17 @@
     </div>
 
     <div class="tab-content mt15">
-        <div role="tabpanel" class="tab-pane active" id="general-info-tab">
+        <div role="tabpanel" class="tab-pane active" id="step1-tab">
             <?php $this->load->view("patient_assessment/assessment_forms/general"); ?>
         </div>
-        <div role="tabpanel" class="tab-pane" id="job-info-tab">
+        <div role="tabpanel" class="tab-pane" id="step2-tab">
             <?php $this->load->view("patient_assessment/assessment_forms/step2"); ?>
         </div>
-        <div role="tabpanel" class="tab-pane" id="account-info-tab">
-           
+        <div role="tabpanel" class="tab-pane" id="step3-tab">
+            <?php $this->load->view("patient_assessment/assessment_forms/step3"); ?>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="step4-tab">
+           <?php $this->load->view("patient_assessment/assessment_forms/step4"); ?>
         </div>
     </div>
 
@@ -52,101 +61,69 @@
                 $("#form-previous").removeAttr('disabled');
             }
         });
-
-        $("#patient_assessment-form input").keydown(function (e) {
-            if (e.keyCode === 13) {
-                e.preventDefault();
-                if ($('#form-submit').hasClass('hide')) {
-                    $("#form-next").trigger('click');
-                } else {
-                    $("#patient_assessment-form").trigger('submit');
-                }
-            }
-        });
-        $("#first_name").focus();
-        $("#patient_assessment-form .select2").select2();
-
-        setDatePicker("#date_of_hire");
+        
+        
+        $("#patient_assessment-form .select2").select2();        
 
         $("#form-previous").click(function () {
-            var $generalTab = $("#general-info-tab"),
-                    $jobTab = $("#job-info-tab"),
-                    $accountTab = $("#account-info-tab"),
+            var $step1 = $("#step1-tab"),
+                   $step2 = $("#step2-tab"),
+                   $step3 = $("#step3-tab"),
+                   $step4 = $("#step4-tab"),
                     $previousButton = $("#form-previous"),
                     $nextButton = $("#form-next"),
                     $submitButton = $("#form-submit");
 
-            if ($accountTab.hasClass("active")) {
-                $accountTab.removeClass("active");
-                $jobTab.addClass("active");
+            if ($step4.hasClass("active")) {
+                $step4.removeClass("active");
+                $step3.addClass("active");
                 $nextButton.removeClass("hide");
                 $submitButton.addClass("hide");
-            } else if ($jobTab.hasClass("active")) {
-                $jobTab.removeClass("active");
-                $generalTab.addClass("active");
+            } else if ($step3.hasClass("active")) {
+                $step3.removeClass("active");
+                $step2.addClass("active");                         
+            } else if ($step2.hasClass("active")) {
+                $step2.removeClass("active");
+                $step1.addClass("active");
                 $previousButton.addClass("hide");
-                $nextButton.removeClass("hide");
-                $submitButton.addClass("hide");
             }
         });
 
         $("#form-next").click(function () {
-            var $generalTab = $("#general-info-tab"),
-                    $jobTab = $("#job-info-tab"),
-                    $accountTab = $("#account-info-tab"),
+            var $step1 = $("#step1-tab"),
+                   $step2 = $("#step2-tab"),
+                   $step3 = $("#step3-tab"),
+                   $step4 = $("#step4-tab"),
                     $previousButton = $("#form-previous"),
                     $nextButton = $("#form-next"),
                     $submitButton = $("#form-submit");
             if (!$("#patient_assessment-form").valid()) {
                 return false;
             }
-            if ($generalTab.hasClass("active")) {
-                $generalTab.removeClass("active");
-                $jobTab.addClass("active");
+            if ($step1.hasClass("active")) {
+                $step1.removeClass("active");
+                $step2.addClass("active");
                 $previousButton.removeClass("hide");
-                $("#form-progress-bar").width("35%");
-                $("#general-info-label").find("i").removeClass("fa-circle-o").addClass("fa-check-circle");
-                $("#patient_assessment_id").focus();
-            } else if ($jobTab.hasClass("active")) {
-                $jobTab.removeClass("active");
-                $accountTab.addClass("active");
-                $previousButton.removeClass("hide");
+                $("#form-progress-bar").width("25%");
+                $("#step1-label").find("i").removeClass("fa-circle-o").addClass("fa-check-circle");                
+            } else if ($step2.hasClass("active")) {
+                $step2.removeClass("active");
+                $step3.addClass("active");                       
+                $("#form-progress-bar").width("50%");
+                $("#step2-label").find("i").removeClass("fa-circle-o").addClass("fa-check-circle");               
+            } else if ($step3.hasClass("active")) {
+                $step3.removeClass("active");
+                $step4.addClass("active");               
                 $nextButton.addClass("hide");
                 $submitButton.removeClass("hide");
-                $("#form-progress-bar").width("72%");
-                $("#job-info-label").find("i").removeClass("fa-circle-o").addClass("fa-check-circle");
-                $("#username").focus();
+                $("#form-progress-bar").width("75%");
+                $("#step3-label").find("i").removeClass("fa-circle-o").addClass("fa-check-circle");               
             }
         });
 
         $("#form-submit").click(function () {
             $("#patient_assessment-form").trigger('submit');
         });
-
-        $("#generate_password").click(function () {
-            $("#password").val(getRndomString(8));
-        });
-
-        $("#show_hide_password").click(function () {
-            var $target = $("#password"),
-                    type = $target.attr("type");
-            if (type === "password") {
-                $(this).attr("title", "<?php echo lang("hide_text"); ?>");
-                $(this).html("<span class='fa fa-eye-slash'></span>");
-                $target.attr("type", "text");
-            } else if (type === "text") {
-                $(this).attr("title", "<?php echo lang("show_text"); ?>");
-                $(this).html("<span class='fa fa-eye'></span>");
-                $target.attr("type", "password");
-            }
-        });
-
-        $("#user-role").change(function () {
-            if ($(this).val() === "admin") {
-                $("#user-role-help-block").removeClass("hide");
-            } else {
-                $("#user-role-help-block").addClass("hide");
-            }
-        });
+        
     });
 </script>

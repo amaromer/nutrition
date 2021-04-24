@@ -63,3 +63,44 @@ $lang["diab_type2"] = "Diabetes Mellitus type 2";
 $lang["gdm"] = "GDM";
 $lang["nutrition_assessment"] = "Nutrition Assessment";
 $lang["other"] = "Other";
+
+//Women History
+$lang["amenorrhea"] = "Amenorrhea";
+$lang["menopause"] = "Menopause";
+$lang["irrgular_mens"] = "Irrgular menstaration" ;
+$lang["excess_bleed"] = "Excessive Bleeding"; 
+$lang["infertility"] = "Infertility";
+
+//suggestive mood
+$lang["depression"] = "Symptoms of depression"; 
+$lang["anxiety"] = "Symptoms of anxiety";
+$lang["bulimia"] = "Symptoms suggestive of bluimia nervosa";
+$lang["binge"] = "Symptoms suggestive of binge eating"; 
+$lang["other_psyc"] = "Other Psychological complaints";
+
+//family history
+$lang["obesity"] = "Obesity"; 
+$lang["DM"] = "DM";
+$lang["hypertension"] = "hypertension"; 
+$lang["hypercholostrol"] = "hypercholesterolimia";
+$lang["coronry"] = "Coronory Artery Dieseas";
+$lang["stoke"] = "Storke";
+
+//idea
+$lang["patient"] = "Patient Own";
+$lang["family"] = "Family or freinds";
+$lang["health"] = "Health Peronel";
+
+//reason
+$lang["health_benefits"]= "Health benefits";
+$lang["cosmetic"] = "Cosmetic";
+$lang["social"] = "Social";
+
+//life style
+$lang["meals"] = "Have regular main meals"; 
+$lang["snack"] = "Snack constantly or at midnight"; 
+$lang["tv_eat"]= "Eat while wathcing TV";
+$lang["fast_food"]= "Prefer fast food or foods prepared outside the house";
+$lang["high_energy"]= "Keep High energy food available at home"; 
+$lang["stress_eat"]= "Eat in response of stress";
+$lang["machinary"] = "Use car or machinaries whenever possible";
