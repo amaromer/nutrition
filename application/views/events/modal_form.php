@@ -23,7 +23,12 @@
             <label for="title" class=" col-md-3"><?php echo lang('title'); ?></label>
             <div class=" col-md-9">
                  <?php
-                 $title_dropdown = array("first" => "First Conslutation", "diet"=>"Dietation Program", "body" => "Body composition analyze", "device" => "Device session", "medical" => "Medical Nutrition Supplement");
+                 $title_dropdown = array(
+                    "first" => "First Conslutation", 
+                    "diet"=>"Dietation Program", 
+                    "body" => "Body composition analyze", 
+                    "device" => "Device session", 
+                    "medical" => "Medical Nutrition Supplement");
                 echo form_dropdown("title", $title_dropdown, 0, "class='select2 validate-hidden' id='title' data-rule-required='true', data-msg-required='" . lang('field_required') . "'");
                 ?>
             </div>
