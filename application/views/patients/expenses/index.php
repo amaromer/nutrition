@@ -2,7 +2,7 @@
     <div class="tab-title clearfix">
         <h4><?php echo lang('expenses'); ?></h4>
         <div class="title-button-group">
-            <?php echo modal_anchor(get_uri("expenses/modal_form"), "<i class='fa fa-plus-cirle'></i>" . lang('add_expense'), array("class" => "btn btn-default", "data-post-client_id" => $client_id, "title" => lang('add_expense'))); ?>
+            <?php echo modal_anchor(get_uri("expenses/modal_form"), "<i class='fa fa-plus-cirle'></i>" . lang('add_expense'), array("class" => "btn btn-default", "data-post-client_id" => $patient_id, "title" => lang('add_expense'))); ?>
         </div>
     </div>
     <div class="table-responsive">
@@ -13,7 +13,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("#expense-table").appTable({
-            source: '<?php echo_uri("expenses/expense_list_data_of_client/" . $client_id) ?>',
+            source: '<?php echo_uri("expenses/expense_list_data_of_client/" . $patient_id) ?>',
             order: [[0, "desc"]],
             columns: [
                 {visible: false, searchable: false},
