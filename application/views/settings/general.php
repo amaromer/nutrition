@@ -278,7 +278,8 @@
                             echo form_dropdown(
                                     "no_of_decimals", array(
                                 "0" => "0",
-                                "2" => "2"
+                                "2" => "2",
+                                "3" => "3"
                                     ), get_setting('no_of_decimals') == "0" ? "0" : "2", "class='select2 mini'"
                             );
                             ?>
