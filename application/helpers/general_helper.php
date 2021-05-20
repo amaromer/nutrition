@@ -1054,7 +1054,7 @@ if (!function_exists('get_estimate_making_data')) {
             $data['estimate_info'] = $estimate_info;
             $data['client_info'] = $ci->Clients_model->get_one($data['estimate_info']->client_id);
             $data['estimate_items'] = $ci->Estimate_items_model->get_details(array("estimate_id" => $estimate_id))->result();
-            $data["estimate_total_summary"] = $ci->Estimates_model->get_estimate_total_summary($estimate_id);
+            $data["total"] = $ci->Estimates_model->get_estimate_total_summary($estimate_id);
 
             $data['estimate_info']->custom_fields = $ci->Custom_field_values_model->get_details(array("related_to_type" => "estimates", "show_in_estimate" => true, "related_to_id" => $estimate_id))->result();
             return $data;

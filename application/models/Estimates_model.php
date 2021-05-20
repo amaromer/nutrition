@@ -81,6 +81,16 @@ class Estimates_model extends Crud_model {
     }
 
     function get_estimate_total_summary($estimate_id = 0) {
+        $item_sql = "SELECT SUM(carb) carb_total, SUM(protien) protien_total, SUM(fat) fat_total, SUM(energy) energy_total 
+        from estimate_items
+        left join estimates on estimates.id = estimate_items.estimate_id
+        where estimates.deleted = 0 and estimate_items.deleted = 0 and estimate_items.estimate_id = $estimate_id
+        ";
+        return $this->db->query($item_sql)->row();
+
+    } 
+
+    function get_estimate_total_summary2($estimate_id = 0) {
         $estimate_items_table = $this->db->dbprefix('estimate_items');
         $estimates_table = $this->db->dbprefix('estimates');
         $clients_table = $this->db->dbprefix('clients');

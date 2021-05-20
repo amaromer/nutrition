@@ -27,7 +27,7 @@
             ?>
         </div>
     </div>
-    <div class="form-group">
+   <!--  <div class="form-group">
         <label for="valid_until" class=" col-md-3"><?php echo lang('valid_until'); ?></label>
         <div class="col-md-9">
             <?php
@@ -45,7 +45,7 @@
             ));
             ?>
         </div>
-    </div>
+    </div> -->
     <?php if ($client_id) { ?>
         <input type="hidden" name="estimate_client_id" value="<?php echo $client_id; ?>" />
     <?php } else { ?>
@@ -59,7 +59,7 @@
         </div>
     <?php } ?>
 
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label for="tax_id" class=" col-md-3"><?php echo lang('tax'); ?></label>
         <div class="col-md-9">
             <?php
@@ -74,7 +74,7 @@
             echo form_dropdown("tax_id2", $taxes_dropdown, array($model_info->tax_id2), "class='select2 tax-select2'");
             ?>
         </div>
-    </div>
+    </div> -->
     <div class="form-group">
         <label for="estimate_note" class=" col-md-3"><?php echo lang('note'); ?></label>
         <div class=" col-md-9">
@@ -102,14 +102,14 @@
                 <?php echo lang('copy_items'); ?>
             </label>
         </div>
-        <div class="form-group">
+       <!--  <div class="form-group">
             <label for="copy_discount"class=" col-md-12">
                 <?php
                 echo form_checkbox("copy_discount", "1", true, "id='copy_discount' disabled='disabled' class='pull-left mr15'");
                 ?>    
                 <?php echo lang('copy_discount'); ?>
             </label>
-        </div>
+        </div> -->
     <?php } ?> 
 
     <?php if ($order_id) { ?>

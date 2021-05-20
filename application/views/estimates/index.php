@@ -35,7 +35,7 @@
                 {title: "<?php echo lang("client") ?>"},
                 {visible: false, searchable: false},
                 {title: "<?php echo lang("estimate_date") ?>", "iDataSort": 2, "class": "w20p"},
-                {title: "<?php echo lang("amount") ?>", "class": "text-right w20p"},
+                //{title: "<?php echo lang("amount") ?>", "class": "text-right w20p"},
                 {title: "<?php echo lang("status") ?>", "class": "text-center"}
 <?php echo $custom_field_headers; ?>,
                 {title: "<i class='fa fa-bars'></i>", "class": "text-center option w100"}

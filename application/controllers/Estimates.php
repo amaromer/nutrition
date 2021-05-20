@@ -103,7 +103,7 @@ class Estimates extends MY_Controller {
             "id" => "numeric",
             "estimate_client_id" => "required|numeric",
             "estimate_date" => "required",
-            "valid_until" => "required",
+           // "valid_until" => "required",
             "estimate_request_id" => "numeric"
         ));
 
@@ -113,7 +113,7 @@ class Estimates extends MY_Controller {
         $estimate_data = array(
             "client_id" => $client_id,
             "estimate_date" => $this->input->post('estimate_date'),
-            "valid_until" => $this->input->post('valid_until'),
+            "valid_until" => '2023-01-01',
             "tax_id" => $this->input->post('tax_id') ? $this->input->post('tax_id') : 0,
             "tax_id2" => $this->input->post('tax_id2') ? $this->input->post('tax_id2') : 0,
             "note" => $this->input->post('estimate_note')
@@ -357,7 +357,7 @@ class Estimates extends MY_Controller {
             $client,
             $data->estimate_date,
             format_to_date($data->estimate_date, false),
-            to_currency($data->estimate_value, $data->currency_symbol),
+           // to_currency($data->estimate_value, $data->currency_symbol),
             $this->_get_estimate_status_label($data),
         );
 
@@ -436,7 +436,7 @@ class Estimates extends MY_Controller {
     /* estimate total section */
 
     private function _get_estimate_total_view($estimate_id = 0) {
-        $view_data["estimate_total_summary"] = $this->Estimates_model->get_estimate_total_summary($estimate_id);
+        $view_data["total"] = $this->Estimates_model->get_estimate_total_summary($estimate_id);
         $view_data["estimate_id"] = $estimate_id;
         return $this->load->view('estimates/estimate_total_section', $view_data, true);
     }
@@ -521,15 +521,28 @@ class Estimates extends MY_Controller {
         $id = $this->input->post('id');
         $rate = unformat_currency($this->input->post('estimate_item_rate'));
         $quantity = unformat_currency($this->input->post('estimate_item_quantity'));
+        
+        $item_name = $this->input->post('estimate_item_title');
+        $item = $this->Food_item_model->get_item_info_suggestion($item_name);
+        $carb = $item->carb;
+        $protien = $item->carb;
+        $fat = $item->fat;
+        $energy = $item->energy;
+        $cat = $item->cat_name;
 
         $estimate_item_data = array(
             "estimate_id" => $estimate_id,
             "title" => $this->input->post('estimate_item_title'),
             "description" => $this->input->post('estimate_item_description'),
             "quantity" => $quantity,
-            "unit_type" => $this->input->post('estimate_unit_type'),
-            "rate" => unformat_currency($this->input->post('estimate_item_rate')),
-            "total" => $rate * $quantity,
+            "unit_type" => "gm",//$this->input->post('estimate_unit_type'),
+            "rate" => 0,//unformat_currency($this->input->post('estimate_item_rate')),
+            "total" => 0,
+            "item_cat" => $cat,
+            "carb" => ($carb / 100) * $quantity,
+            "protien" => ($protien / 100) * $quantity,
+            "fat" => ($protien / 100) * $quantity,
+            "energy" => ($energy / 100) * $quantity
         );
 
         $estimate_item_id = $this->Estimate_items_model->save($estimate_item_data, $id);
@@ -552,7 +565,8 @@ class Estimates extends MY_Controller {
 
             $options = array("id" => $estimate_item_id);
             $item_info = $this->Estimate_items_model->get_details($options)->row();
-            echo json_encode(array("success" => true, "estimate_id" => $item_info->estimate_id, "data" => $this->_make_item_row($item_info), "estimate_total_view" => $this->_get_estimate_total_view($item_info->estimate_id), 'id' => $estimate_item_id, 'message' => lang('record_saved')));
+            echo json_encode(array("success" => true, "estimate_id" => $item_info->estimate_id, "data" => $this->_make_item_row($item_info), "estimate_total_view" => $this->_get_estimate_total_view($item_info->estimate_id)
+                ,'id' => $estimate_item_id, 'message' => lang('record_saved')));
         } else {
             echo json_encode(array("success" => false, 'message' => lang('error_occurred')));
         }
@@ -610,10 +624,16 @@ class Estimates extends MY_Controller {
 
         return array(
             $data->sort,
+            $data->item_cat,
             $item,
+
             to_decimal_format($data->quantity) . " " . $type,
-            to_currency($data->rate, $data->currency_symbol),
-            to_currency($data->total, $data->currency_symbol),
+           // to_currency($data->rate, $data->currency_symbol),
+           // to_currency($data->total, $data->currency_symbol),
+            $data->protien,
+            $data->carb,
+            $data->fat,
+            $data->energy,
             modal_anchor(get_uri("estimates/item_modal_form"), "<i class='fa fa-pencil'></i>", array("class" => "edit", "title" => lang('edit_estimate'), "data-post-id" => $data->id))
             . js_anchor("<i class='fa fa-times fa-fw'></i>", array('title' => lang('delete'), "class" => "delete", "data-id" => $data->id, "data-action-url" => get_uri("estimates/delete_item"), "data-action" => "delete"))
         );
@@ -625,10 +645,10 @@ class Estimates extends MY_Controller {
         $key = $_REQUEST["q"];
         $suggestion = array();
 
-        $items = $this->Invoice_items_model->get_item_suggestion($key);
+        $items = $this->Food_item_model->get_item_suggestion($key);
 
         foreach ($items as $item) {
-            $suggestion[] = array("id" => $item->title, "text" => $item->title);
+            $suggestion[] = array("id" => $item->english, "text" => $item->english);
         }
 
         $suggestion[] = array("id" => "+", "text" => "+ " . lang("create_new_item"));
@@ -637,7 +657,7 @@ class Estimates extends MY_Controller {
     }
 
     function get_estimate_item_info_suggestion() {
-        $item = $this->Invoice_items_model->get_item_info_suggestion($this->input->post("item_name"));
+        $item = $this->Food_item_model->get_item_info_suggestion($this->input->post("item_name"));
         if ($item) {
             echo json_encode(array("success" => true, "item_info" => $item));
         } else {

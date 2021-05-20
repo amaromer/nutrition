@@ -32,7 +32,7 @@ $lang["start_date"] = "Start date";
 $lang["end_date"] = "End date";
 $lang["start_time"] = "Start time";
 $lang["end_time"] = "End time";
-$lang["deadline"] = "Deadline";
+$lang["deadline"] = "end date";
 $lang["added"] = "Added";
 $lang["created_date"] = "Created date";
 $lang["created"] = "Created";
@@ -54,7 +54,7 @@ $lang["income_vs_expenses"] = "Income vs Expenses";
 $lang["title"] = "Title";
 $lang["reset"] = "Reset";
 $lang["share_with"] = "Share with";
-$lang["company_name"] = "Company name";
+$lang["company_name"] = "Client name";
 $lang["address"] = "Address";
 $lang["city"] = "City";
 $lang["state"] = "State";
@@ -171,7 +171,7 @@ $lang["members_clocked_out"] = "Members Clocked Out";
 $lang["my_time_cards"] = "My time cards";
 $lang["timecard_statistics"] = "Time Card Statistics";
 $lang["total_hours_worked"] = "Total hours worked";
-$lang["total_project_hours"] = "Total project hours";
+$lang["total_project_hours"] = "Total  Dietation Program hours";
 
 /* leave types */
 $lang["add_leave_type"] = "Add leave type";
@@ -340,28 +340,28 @@ $lang["invite_an_user"] = "Invite an user for %s"; // Invite an user for {compan
 $lang["unit_type"] = "Unit type";
 
 /* projects */
-$lang["add_project"] = "Add project";
-$lang["edit_project"] = "Edit project";
-$lang["delete_project"] = "Delete project";
-$lang["project"] = "Project";
-$lang["projects"] = "Projects";
-$lang["all_projects"] = "All Projects";
+$lang["add_project"] = "Add Dietation Program";
+$lang["edit_project"] = "Edit  Dietation Program";
+$lang["delete_project"] = "Delete  Dietation Program";
+$lang["project"] = " Dietation Program";
+$lang["projects"] = " Dietation Programs";
+$lang["all_projects"] = "All  Dietation Programs";
 $lang["member"] = "Member";
 $lang["overview"] = "Overview";
-$lang["project_members"] = "Project members";
+$lang["project_members"] = " Dietation Program members";
 $lang["add_member"] = "Add member";
 $lang["delete_member"] = "Delete member";
 $lang["start_timer"] = "Start timer";
 $lang["stop_timer"] = "Stop timer";
-$lang["project_timeline"] = "Project Timeline";
-$lang["open_projects"] = "Open Projects";
-$lang["projects_completed"] = "Projects Completed";
+$lang["project_timeline"] = " Dietation Program Timeline";
+$lang["open_projects"] = "Open  Dietation Programs";
+$lang["projects_completed"] = " Dietation Programs Completed";
 $lang["progress"] = "Progress";
 $lang["activity"] = "Activity";
 $lang["started_at"] = "Started at";
 $lang["customer_feedback"] = "Customer feedback";
-$lang["project_comment_reply"] = "Project comment reply";
-$lang["task_comment_reply"] = "Task comment reply";
+$lang["project_comment_reply"] = " Dietation Program comment reply";
+$lang["task_comment_reply"] = "Visit comment reply";
 $lang["file_comment_reply"] = "File comment reply   ";
 $lang["customer_feedback_reply"] = "Customer feedback reply";
 
@@ -422,23 +422,23 @@ $lang["download_files"] = "Download %s files"; //Ex. Download 4 files
 $lang["file_preview_is_not_available"] = "File preview is not available.";
 
 /* tasks */
-$lang["add_task"] = "Add task";
-$lang["edit_task"] = "Edit task";
-$lang["delete_task"] = "Delete task";
-$lang["task"] = "Task";
-$lang["tasks"] = "Tasks";
-$lang["my_tasks"] = "My Tasks";
-$lang["my_open_tasks"] = "My open tasks";
+$lang["add_task"] = "Add Visit";
+$lang["edit_task"] = "Edit Visit";
+$lang["delete_task"] = "Delete Visit";
+$lang["task"] = "Visit";
+$lang["tasks"] = "Visits";
+$lang["my_tasks"] = "My Visits";
+$lang["my_open_tasks"] = "My open Visits";
 $lang["assign_to"] = "Assign to";
 $lang["assigned_to"] = "Assigned to";
 $lang["labels"] = "Labels";
 $lang["to_do"] = "To do";
 $lang["in_progress"] = "In progress";
 $lang["done"] = "Done";
-$lang["task_info"] = "Task info";
+$lang["task_info"] = "Visit info";
 $lang["points"] = "Points";
 $lang["point"] = "Point";
-$lang["task_status"] = "Task Status";
+$lang["task_status"] = "Visit Status";
 
 /* comments */
 $lang["comment"] = "Comment";
@@ -452,8 +452,8 @@ $lang["replies"] = "Replies";
 $lang["like"] = "Like";
 $lang["unlike"] = "Unlike";
 $lang["view"] = "View";
-$lang["project_comment"] = "Project Comment";
-$lang["task_comment"] = "Task Comment";
+$lang["project_comment"] = " Dietation Program Comment";
+$lang["task_comment"] = "Visit Comment";
 $lang["file_comment"] = "File Comment";
 
 /* time format */
@@ -466,23 +466,23 @@ $lang["yesterday_at"] = "Yesterday at";
 
 /* tickets */
 
-$lang["add_ticket"] = "Add ticket";
-$lang["ticket"] = "Ticket";
-$lang["tickets"] = "Tickets";
-$lang["ticket_id"] = "Ticket ID";
+$lang["add_ticket"] = "Add Patient Assessment";
+$lang["ticket"] = "Patient Assessment";
+$lang["tickets"] = "Patient Assessments";
+$lang["ticket_id"] = "Patient Assessment ID";
 $lang["client_replied"] = "Client replied";
 $lang["change_status"] = "Change status";
 $lang["last_activity"] = "Last activity";
-$lang["open_tickets"] = "Open tickets";
-$lang["ticket_status"] = "Ticket Status";
+$lang["open_tickets"] = "Open Patient Assessments";
+$lang["ticket_status"] = "Patient Assessment Status";
 
 /* ticket types */
 
-$lang["add_ticket_type"] = "Add ticket type";
-$lang["ticket_type"] = "Ticket type";
-$lang["ticket_types"] = "Ticket types";
-$lang["edit_ticket_type"] = "Edit ticket type";
-$lang["delete_ticket_type"] = "Delete ticket type";
+$lang["add_ticket_type"] = "Add Patient Assessment type";
+$lang["ticket_type"] = "Patient Assessment type";
+$lang["ticket_types"] = "Patient Assessment types";
+$lang["edit_ticket_type"] = "Edit Patient Assessment type";
+$lang["delete_ticket_type"] = "Delete Patient Assessment type";
 
 /* payment methods */
 
@@ -562,10 +562,10 @@ $lang["use_seetings_from"] = "Use settings from";
 $lang["permissions"] = "Permissions";
 $lang["yes_all_members"] = "Yes, all members";
 $lang["yes_specific_members_or_teams"] = "Yes, specific members or teams";
-$lang["yes_specific_ticket_types"] = "Yes, specific ticket types";
+$lang["yes_specific_ticket_types"] = "Yes, specific Patient Assessment types";
 $lang["select_a_role"] = "Select a role";
 $lang["choose_members_and_or_teams"] = "Choose members and / or teams";
-$lang["choose_ticket_types"] = "Choose ticket types";
+$lang["choose_ticket_types"] = "Choose Patient Assessment types";
 $lang["excluding_his_her_time_cards"] = "Excluding his/her own time cards";
 $lang["excluding_his_her_leaves"] = "Excluding his/her own leaves";
 $lang["can_manage_team_members_leave"] = "Can manage team member's leaves?";
@@ -573,7 +573,7 @@ $lang["can_manage_team_members_timecards"] = "Can manage team member's time card
 $lang["can_access_invoices"] = "Can access invoices?";
 $lang["can_access_expenses"] = "Can access expenses?";
 $lang["can_access_clients_information"] = "Can access client's information?";
-$lang["can_access_tickets"] = "Can access tickets?";
+$lang["can_access_tickets"] = "Can access Patient Assessments?";
 $lang["can_manage_announcements"] = "Can manage announcements?";
 
 /* timeline */
@@ -615,31 +615,31 @@ $lang["rows_per_page"] = "Rows per page";
 $lang["price"] = "Price";
 $lang["security_type"] = "Security Type";
 
-$lang["client_can_view_tasks"] = "Client can view tasks?";
-$lang["client_can_create_tasks"] = "Client can create tasks?";
-$lang["client_can_edit_tasks"] = "Client can edit tasks?";
-$lang["client_can_comment_on_tasks"] = "Client can comment on tasks?";
+$lang["client_can_view_tasks"] = "Client can view Visits?";
+$lang["client_can_create_tasks"] = "Client can create Visits?";
+$lang["client_can_edit_tasks"] = "Client can edit Visits?";
+$lang["client_can_comment_on_tasks"] = "Client can comment on Visits?";
 
-$lang["set_project_permissions"] = "Set project permissions";
-$lang["can_create_projects"] = "Can create projects";
-$lang["can_edit_projects"] = "Can edit projects";
-$lang["can_delete_projects"] = "Can delete projects";
-$lang["can_create_tasks"] = "Can create tasks";
-$lang["can_edit_tasks"] = "Can edit tasks";
-$lang["can_delete_tasks"] = "Can delete tasks";
-$lang["can_comment_on_tasks"] = "Can comment on tasks";
+$lang["set_project_permissions"] = "Set  Dietation Program permissions";
+$lang["can_create_projects"] = "Can create  Dietation Programs";
+$lang["can_edit_projects"] = "Can edit  Dietation Programs";
+$lang["can_delete_projects"] = "Can delete  Dietation Programs";
+$lang["can_create_tasks"] = "Can create Visits";
+$lang["can_edit_tasks"] = "Can edit Visits";
+$lang["can_delete_tasks"] = "Can delete Visits";
+$lang["can_comment_on_tasks"] = "Can comment on Visits";
 $lang["can_create_milestones"] = "Can create milestones";
 $lang["can_edit_milestones"] = "Can edit milestones";
 $lang["can_delete_milestones"] = "Can delete milestones";
-$lang["can_add_remove_project_members"] = "Can add/remove project members";
+$lang["can_add_remove_project_members"] = "Can add/remove  Dietation Program members";
 $lang["can_delete_files"] = "Can delete files";
 
 /* Version 1.2.2 */
 $lang["label"] = "Label";
 $lang["send_bcc_to"] = "When sending invoice to client, send BCC to";
-$lang["mark_project_as_completed"] = "Mark Project as Completed";
-$lang["mark_project_as_canceled"] = "Mark Project as Canceled";
-$lang["mark_project_as_open"] = "Mark Project as Open";
+$lang["mark_project_as_completed"] = "Mark  Dietation Program as Completed";
+$lang["mark_project_as_canceled"] = "Mark  Dietation Program as Canceled";
+$lang["mark_project_as_open"] = "Mark  Dietation Program as Open";
 
 /* Version 1.3 */
 $lang["notification"] = "Notification";
@@ -650,25 +650,25 @@ $lang["enable_web"] = "Enable web";
 $lang["event"] = "Event";
 $lang["notify_to"] = "Notify to";
 
-$lang["project_created"] = "Project created";
-$lang["project_deleted"] = "Project deleted";
-$lang["project_task_created"] = "Project task created";
-$lang["project_task_updated"] = "Project task updated";
-$lang["project_task_assigned"] = "Project task assigned";
-$lang["project_task_started"] = "Project task started";
-$lang["project_task_finished"] = "Project task finished";
-$lang["project_task_reopened"] = "Project task reopened";
-$lang["project_task_deleted"] = "Project task deleted";
-$lang["project_task_commented"] = "Project task commented";
-$lang["project_member_added"] = "Project member added";
-$lang["project_member_deleted"] = "Project member deleted";
-$lang["project_file_added"] = "Project file added";
-$lang["project_file_deleted"] = "Project file deleted";
-$lang["project_file_commented"] = "Project file commented";
-$lang["project_comment_added"] = "Project comment added";
-$lang["project_comment_replied"] = "Project comment replied";
-$lang["project_customer_feedback_added"] = "Project customer feedback added";
-$lang["project_customer_feedback_replied"] = "Project customer feedback replied";
+$lang["project_created"] = " Dietation Program created";
+$lang["project_deleted"] = " Dietation Program deleted";
+$lang["project_task_created"] = " Dietation Program Visit created";
+$lang["project_task_updated"] = " Dietation Program Visit updated";
+$lang["project_task_assigned"] = " Dietation Program Visit assigned";
+$lang["project_task_started"] = " Dietation Program Visit started";
+$lang["project_task_finished"] = " Dietation Program Visit finished";
+$lang["project_task_reopened"] = " Dietation Program Visit reopened";
+$lang["project_task_deleted"] = " Dietation Program Visit deleted";
+$lang["project_task_commented"] = " Dietation Program Visit commented";
+$lang["project_member_added"] = " Dietation Program member added";
+$lang["project_member_deleted"] = " Dietation Program member deleted";
+$lang["project_file_added"] = " Dietation Program file added";
+$lang["project_file_deleted"] = " Dietation Program file deleted";
+$lang["project_file_commented"] = " Dietation Program file commented";
+$lang["project_comment_added"] = " Dietation Program comment added";
+$lang["project_comment_replied"] = " Dietation Program comment replied";
+$lang["project_customer_feedback_added"] = " Dietation Program customer feedback added";
+$lang["project_customer_feedback_replied"] = " Dietation Program customer feedback replied";
 $lang["client_signup"] = "Client signup";
 $lang["invoice_online_payment_received"] = "Invoice online payment received";
 $lang["leave_application_submitted"] = "Leave application submitted";
@@ -676,42 +676,42 @@ $lang["leave_approved"] = "Leave approved";
 $lang["leave_assigned"] = "Leave assigned";
 $lang["leave_rejected"] = "Leave rejected";
 $lang["leave_canceled"] = "Leave canceled";
-$lang["ticket_created"] = "Ticket created";
-$lang["ticket_commented"] = "Ticket commented";
-$lang["ticket_closed"] = "Ticket closed";
-$lang["ticket_reopened"] = "Ticket reopened";
+$lang["ticket_created"] = "Patient Assessment created";
+$lang["ticket_commented"] = "Patient Assessment commented";
+$lang["ticket_closed"] = "Patient Assessment closed";
+$lang["ticket_reopened"] = "Patient Assessment reopened";
 $lang["leave"] = "Leave";
 
 $lang["client_primary_contact"] = "Primary contact of client";
 $lang["client_all_contacts"] = "All contacts of client";
-$lang["task_assignee"] = "Task assignee";
-$lang["task_collaborators"] = "Task collaborators";
+$lang["task_assignee"] = "Visit assignee";
+$lang["task_collaborators"] = "Visit collaborators";
 $lang["comment_creator"] = "Comment creator";
 $lang["leave_applicant"] = "Leave applicant";
-$lang["ticket_creator"] = "Ticket creator";
+$lang["ticket_creator"] = "Patient Assessment creator";
 
 $lang["no_new_notifications"] = "No notification found.";
 
 /* Notification messages */
 
-$lang["notification_project_created"] = "Created a new project.";
-$lang["notification_project_deleted"] = "Deleted a project.";
-$lang["notification_project_task_created"] = "Created a new task.";
-$lang["notification_project_task_updated"] = "Updated a task.";
-$lang["notification_project_task_assigned"] = "Assigned a task to %s"; //Assigned a task to Mr. X
-$lang["notification_project_task_started"] = "Started a task.";
-$lang["notification_project_task_finished"] = "Finished a task.";
-$lang["notification_project_task_reopened"] = "Reopened a task.";
-$lang["notification_project_task_deleted"] = "Deleted a task.";
-$lang["notification_project_task_commented"] = "Commented on a task.";
-$lang["notification_project_member_added"] = "Added %s in a project."; //Added Mr. X in a project.
-$lang["notification_project_member_deleted"] = "Deleted %s from a project."; //Deleted Mr. X from a project.
-$lang["notification_project_file_added"] = "Added a file in project.";
-$lang["notification_project_file_deleted"] = "Deleted a file from project.";
+$lang["notification_project_created"] = "Created a new  Dietation Program.";
+$lang["notification_project_deleted"] = "Deleted a  Dietation Program.";
+$lang["notification_project_task_created"] = "Created a new Visit.";
+$lang["notification_project_task_updated"] = "Updated a Visit.";
+$lang["notification_project_task_assigned"] = "Assigned a Visit to %s"; //Assigned a task to Mr. X
+$lang["notification_project_task_started"] = "Started a Visit.";
+$lang["notification_project_task_finished"] = "Finished a Visit.";
+$lang["notification_project_task_reopened"] = "Reopened a Visit.";
+$lang["notification_project_task_deleted"] = "Deleted a Visit.";
+$lang["notification_project_task_commented"] = "Commented on a Visit.";
+$lang["notification_project_member_added"] = "Added %s in a  Dietation Program."; //Added Mr. X in a project.
+$lang["notification_project_member_deleted"] = "Deleted %s from a  Dietation Program."; //Deleted Mr. X from a project.
+$lang["notification_project_file_added"] = "Added a file in  Dietation Program.";
+$lang["notification_project_file_deleted"] = "Deleted a file from  Dietation Program.";
 $lang["notification_project_file_commented"] = "Commented on a file.";
-$lang["notification_project_comment_added"] = "Commented on a project.";
-$lang["notification_project_comment_replied"] = "Replied on a project comment.";
-$lang["notification_project_customer_feedback_added"] = "Commented on a project.";
+$lang["notification_project_comment_added"] = "Commented on a  Dietation Program.";
+$lang["notification_project_comment_replied"] = "Replied on a  Dietation Program comment.";
+$lang["notification_project_customer_feedback_added"] = "Commented on a  Dietation Program.";
 $lang["notification_project_customer_feedback_replied"] = "Replied on a comment.";
 $lang["notification_client_signup"] = "Signed up as a new client."; //Mr. X signed up as a new client.
 $lang["notification_invoice_online_payment_received"] = "Submitted a online payment.";
@@ -720,18 +720,18 @@ $lang["notification_leave_approved"] = "Approved a leave of %s."; //Approved a l
 $lang["notification_leave_assigned"] = "Assigned a leave to %s."; //Assigned a leave to Mr. X
 $lang["notification_leave_rejected"] = "Rejected a leave %s."; //Approve a leave of Mr. X
 $lang["notification_leave_canceled"] = "Canceled a leave appliction.";
-$lang["notification_ticket_created"] = "Created a new ticket.";
-$lang["notification_ticket_commented"] = "Commented on a ticket.";
-$lang["notification_ticket_closed"] = "Closed the ticket.";
-$lang["notification_ticket_reopened"] = "Reopened the ticket.";
+$lang["notification_ticket_created"] = "Created a new Patient Assessment.";
+$lang["notification_ticket_commented"] = "Commented on a Patient Assessment.";
+$lang["notification_ticket_closed"] = "Closed the Patient Assessment.";
+$lang["notification_ticket_reopened"] = "Reopened the Patient Assessment.";
 
 $lang["general_notification"] = "General notification";
 
 $lang["disable_online_payment"] = "Disable online payment";
 $lang["disable_online_payment_description"] = "Hide online payment options in invoice for this client.";
 
-$lang["client_can_view_project_files"] = "Client can view project files?";
-$lang["client_can_add_project_files"] = "Client can add project files?";
+$lang["client_can_view_project_files"] = "Client can view  Dietation Program files?";
+$lang["client_can_add_project_files"] = "Client can add  Dietation Program files?";
 $lang["client_can_comment_on_files"] = "Client can comment on files?";
 $lang["mark_invoice_as_not_paid"] = "Mark as Not paid"; //Change invoice status to Not Paid
 
@@ -748,20 +748,20 @@ $lang["modules"] = "Modules";
 $lang["manage_modules"] = "Manage Modules";
 $lang["module_settings_instructions"] = "Select the modules you want to use.";
 
-$lang["task_point_help_text"] = "Task point considered as a task value. You can set 5 points for very difficult tasks and 1 point for easy tasks."; //meaning of task point
+$lang["task_point_help_text"] = "Visit point considered as a Visit value. You can set 5 points for very difficult Visits and 1 point for easy Visits."; //meaning of task point
 
 $lang["mark_as_open"] = "Mark as Open";
 $lang["mark_as_closed"] = "Mark as Closed";
 
-$lang["ticket_assignee"] = "Ticket assignee";
+$lang["ticket_assignee"] = "Patient Assessment assignee";
 
-$lang["estimate"] = "Estimate";
-$lang["estimates"] = "Estimates";
-$lang["estimate_request"] = "Estimate Request";
-$lang["estimate_requests"] = "Estimate Requests";
-$lang["estimate_list"] = "Estimate List";
-$lang["estimate_forms"] = "Estimate Forms";
-$lang["estimate_request_forms"] = "Estimate Request Forms";
+$lang["estimate"] = "24HR Report";
+$lang["estimates"] = "24HR Reports";
+$lang["estimate_request"] = "24HR Report Request";
+$lang["estimate_requests"] = "24HR Report Requests";
+$lang["estimate_list"] = "24HR Report List";
+$lang["estimate_forms"] = "24HR Report Forms";
+$lang["estimate_request_forms"] = "24HR Report Request Forms";
 
 $lang["add_form"] = "Add form";
 $lang["edit_form"] = "Edit form";
@@ -779,30 +779,30 @@ $lang["field_type_textarea"] = "Textarea";
 $lang["field_type_select"] = "Select";
 $lang["field_type_multi_select"] = "Multi Select";
 
-$lang["request_an_estimate"] = "Request an Estimate";
+$lang["request_an_estimate"] = "Request an 24HR Report";
 $lang["estimate_submission_message"] = "Your request has been submitted successfully!";
 
 $lang["hold"] = "Hold";
 $lang["processing"] = "Processing";
-$lang["estimated"] = "Estimated";
+$lang["estimated"] = "24HR Reported";
 
-$lang["add_estimate"] = "Add estimate";
-$lang["edit_estimate"] = "Edit estimate";
-$lang["delete_estimate"] = "Delete estimate";
+$lang["add_estimate"] = "Add 24HR Report";
+$lang["edit_estimate"] = "Edit 24HR Report";
+$lang["delete_estimate"] = "Delete 24HR Report";
 $lang["valid_until"] = "Valid until";
-$lang["estimate_date"] = "Estimate date";
+$lang["estimate_date"] = "24HR Report date";
 $lang["accepted"] = "Accepted";
 $lang["declined"] = "Declined";
 $lang["sent"] = "Sent";
-$lang["estimate_preview"] = "Estimate Preview";
-$lang["estimate_to"] = "Estimate To";
+$lang["estimate_preview"] = "24HR Report Preview";
+$lang["estimate_to"] = "24HR Report To";
 
-$lang["can_access_estimates"] = "Can access estimates?";
-$lang["request_an_estimate"] = "Request an estimate";
+$lang["can_access_estimates"] = "Can access 24HR Reports?";
+$lang["request_an_estimate"] = "Request an 24HR Report";
 $lang["estimate_request_form_selection_title"] = "Please select a form from the following list to submit your request.";
 
 $lang["mark_as_processing"] = "Mark as Processing";
-$lang["mark_as_estimated"] = "Mark as Estimated";
+$lang["mark_as_estimated"] = "Mark as 24HR Reportd";
 $lang["mark_as_hold"] = "Mark as Hold";
 $lang["mark_as_canceled"] = "Mark as Canceled";
 
@@ -811,24 +811,24 @@ $lang["mark_as_accepted"] = "Mark as Accepted";
 $lang["mark_as_rejected"] = "Mark as Rejected";
 $lang["mark_as_declined"] = "Mark as Declined";
 
-$lang["estimate_request_received"] = "Estimate request received";
-$lang["estimate_sent"] = "Estimate sent";
-$lang["estimate_accepted"] = "Estimate accepted";
-$lang["estimate_rejected"] = "Estimate rejected";
+$lang["estimate_request_received"] = "24HR Report request received";
+$lang["estimate_sent"] = "24HR Report sent";
+$lang["estimate_accepted"] = "24HR Report accepted";
+$lang["estimate_rejected"] = "24HR Report rejected";
 
-$lang["notification_estimate_request_received"] = "Submitted an estimate request";
-$lang["notification_estimate_sent"] = "Sent an estimate";
-$lang["notification_estimate_accepted"] = "Accepted an estimate";
-$lang["notification_estimate_rejected"] = "Rejected an estimate";
+$lang["notification_estimate_request_received"] = "Submitted an 24HR Report request";
+$lang["notification_estimate_sent"] = "Sent an 24HR Report";
+$lang["notification_estimate_accepted"] = "Accepted an 24HR Report";
+$lang["notification_estimate_rejected"] = "Rejected an 24HR Report";
 
-$lang["clone_project"] = "Clone Project";
-$lang["copy_tasks"] = "Copy tasks";
-$lang["copy_project_members"] = "Copy project members";
+$lang["clone_project"] = "Clone  Dietation Program";
+$lang["copy_tasks"] = "Copy Visits";
+$lang["copy_project_members"] = "Copy  Dietation Program members";
 $lang["copy_milestones"] = "Copy milestones";
 $lang["copy_same_assignee_and_collaborators"] = "Copy same assignee and collaborators";
-$lang["copy_tasks_start_date_and_deadline"] = "Copy tasks start date and deadline";
-$lang["task_comments_will_not_be_included"] = "Tasks comments will not be included";
-$lang["project_cloned_successfully"] = "The project has been cloned successfully";
+$lang["copy_tasks_start_date_and_deadline"] = "Copy Visits start date and end date";
+$lang["task_comments_will_not_be_included"] = "Visits comments will not be included";
+$lang["project_cloned_successfully"] = "The  Dietation Program has been cloned successfully";
 
 $lang["search"] = "Search";
 $lang["no_record_found"] = "No record found.";
@@ -888,7 +888,7 @@ $lang["gantt"] = "Gantt";
 $lang["not_specified"] = "Not specified";
 $lang["group_by"] = "Group by";
 $lang["create_invoice"] = "Create Invoice";
-$lang["include_all_items_of_this_estimate"] = "Include all items of this estimate";
+$lang["include_all_items_of_this_estimate"] = "Include all items of this 24HR Report";
 $lang["edit_payment"] = "Edit payment";
 $lang["disable_client_login"] = "Disable client login";
 $lang["disable_client_signup"] = "Disable client signup";
@@ -911,7 +911,7 @@ $lang["delete_field"] = "Delete field";
 $lang["client_info"] = "Client info";
 $lang["edit_expenses_category"] = "Edit expenses category";
 $lang["eelete_expenses_category"] = "Delete expenses category";
-$lang["empty_starred_projects"] = "To access your favorite projects quickly, please go to the project view and mark the star.";
+$lang["empty_starred_projects"] = "To access your favorite  Dietation Programs quickly, please go to the  Dietation Program view and mark the star.";
 $lang["empty_starred_clients"] = "To access your favorite clients quickly, please go to the client view and mark the star.";
 $lang["download_zip_name"] = "documents";
 $lang["invoice_prefix"] = "Invoice prefix";
@@ -931,7 +931,7 @@ $lang["notification_invoice_payment_confirmation"] = "Payment received";
 
 /* Version 1.7 */
 
-$lang["client_can_create_projects"] = "Client can create projects?";
+$lang["client_can_create_projects"] = "Client can create  Dietation Programs?";
 $lang["client_can_view_timesheet"] = "Client can view timesheet?";
 $lang["client_can_view_gantt"] = "Client can view gantt?";
 $lang["client_can_view_overview"] = "Client can view project overview?";
@@ -992,12 +992,12 @@ $lang["message_received"] = "Message received";
 $lang["in_number_of_days"] = "In %s days"; //Ex. In 7 days
 $lang["details"] = "Details";
 $lang["summary"] = "Summary";
-$lang["project_timesheet"] = "Project timesheet";
+$lang["project_timesheet"] = " Dietation Program timesheet";
 
 $lang["set_event_permissions"] = "Set event permissions";
 $lang["disable_event_sharing"] = "Disable event sharing";
 $lang["can_update_team_members_general_info_and_social_links"] = "Can update team member's general info and social links?";
-$lang["can_manage_team_members_project_timesheet"] = "Can manage team member's project timesheet?";
+$lang["can_manage_team_members_project_timesheet"] = "Can manage team member's  Dietation Program timesheet?";
 
 $lang["cron_job"] = "Cron Job";
 $lang["cron_job_link"] = "Cron Job link";
@@ -1019,11 +1019,11 @@ $lang["re_captcha_error-invalid-input-response"] = "The response parameter is in
 $lang["re_captcha_error-bad-request"] = "The request is invalid or malformed.";
 $lang["re_captcha_expired"] = "The reCAPTCHA has been expired. Please reload the page.";
 
-$lang["yes_all_tickets"] = "Yes, all tickets";
-$lang["choose_ticket_types"] = "Choose ticket types";
+$lang["yes_all_tickets"] = "Yes, all Patient Assessments";
+$lang["choose_ticket_types"] = "Choose Patient Assessment types";
 
-$lang["can_manage_all_projects"] = "Can manage all projects";
-$lang["show_most_recent_ticket_comments_at_the_top"] = "Show most recent ticket comments at the top";
+$lang["can_manage_all_projects"] = "Can manage all  Dietation Programs";
+$lang["show_most_recent_ticket_comments_at_the_top"] = "Show most recent Patient Assessment comments at the top";
 
 $lang["new_event_added_in_calendar"] = "New event added in calendar";
 $lang["notification_new_event_added_in_calendar"] = "Added a new event.";
@@ -1038,19 +1038,19 @@ $lang["add_client_group"] = "Add client group";
 $lang["edit_client_group"] = "Edit client group";
 $lang["delete_client_group"] = "Delete client group";
 
-$lang["ticket_prefix"] = "Ticket prefix";
-$lang["add_a_task"] = "Add a task...";
+$lang["ticket_prefix"] = "Patient Assessment prefix";
+$lang["add_a_task"] = "Add a Visit...";
 
-$lang["add_task_status"] = "Add task status";
-$lang["edit_task_status"] = "Edit task status";
-$lang["delete_task_status"] = "Delete task status";
+$lang["add_task_status"] = "Add Visit status";
+$lang["edit_task_status"] = "Edit Visit status";
+$lang["delete_task_status"] = "Delete Visit status";
 
 $lang["list"] = "List";
 $lang["kanban"] = "Kanban";
 $lang["priority"] = "Priority";
 $lang["moved_up"] = "Moved Up";
 $lang["moved_down"] = "Moved Down";
-$lang["mark_project_as_hold"] = "Mark Project as Hold";
+$lang["mark_project_as_hold"] = "Mark  Dietation Program as Hold";
 
 $lang["repeat"] = "Repeat";
 
@@ -1065,7 +1065,7 @@ $lang["my_preferences"] = "My preferences";
 $lang["show_push_notification"] = "Show push notification";
 $lang["notification_sound_volume"] = "Notification sound volume";
 
-$lang["project_reference_in_tickets"] = "Enable project reference";
+$lang["project_reference_in_tickets"] = "Enable  Dietation Program reference";
 
 $lang["hide_menus_from_client_portal"] = "Hide menus from client portal";
 $lang["hidden_menus"] = "Hidden menus";
@@ -1103,7 +1103,7 @@ $lang["enable_email_notification"] = "Enable email notification";
 
 /* Version 2.0.3 */
 
-$lang["show_in_estimate"] = "Show in estimate";
+$lang["show_in_estimate"] = "Show in 24HR Report";
 $lang["mentioned_members"] = "Mentioned members";
 $lang["all"] = "All";
 
@@ -1145,7 +1145,7 @@ $lang["content"] = "Content";
 $lang["clock_in_out"] = "Clock in-out";
 $lang["custom_widget_details"] = "Custom widget details";
 
-$lang["total_projects"] = "Total projects";
+$lang["total_projects"] = "Total  Dietation Programs";
 $lang["total_invoices"] = "Total invoices";
 $lang["total_payments"] = "Total payments";
 $lang["total_due"] = "Total due";
@@ -1153,20 +1153,20 @@ $lang["total_due"] = "Total due";
 $lang["show_title"] = "Show title";
 $lang["show_border"] = "Show border";
 
-$lang["all_tasks_kanban"] = "All tasks kanban";
+$lang["all_tasks_kanban"] = "All Visits kanban";
 $lang["todo_list"] = "Todo list";
-$lang["open_projects_list"] = "Open Projects List";
-$lang["starred_projects"] = "Starred Projects";
-$lang["completed_projects"] = "Completed Projects";
+$lang["open_projects_list"] = "Open  Dietation Programs List";
+$lang["starred_projects"] = "Starred  Dietation Programs";
+$lang["completed_projects"] = "Completed  Dietation Programs";
 
-$lang["new_tickets"] = "New Tickets";
-$lang["closed_tickets"] = "Closed Tickets";
+$lang["new_tickets"] = "New Patient Assessments";
+$lang["closed_tickets"] = "Closed Patient Assessments";
 
 $lang["clocked_in_team_members"] = "Clocked in team members";
 $lang["clocked_out_team_members"] = "Clocked out team members";
 $lang["latest_online_client_contacts"] = "Latest online client contacts";
 $lang["latest_online_team_members"] = "Latest online team members";
-$lang["my_tasks_list"] = "My tasks list";
+$lang["my_tasks_list"] = "My Visits list";
 
 $lang["discount"] = "Discount";
 $lang["discount_type"] = "Discount Type";
@@ -1181,12 +1181,12 @@ $lang["setup"] = "Setup";
 $lang["client_permissions"] = "Client permissions";
 
 $lang["invoice_over_payment_error_message"] = "You can't pay more than your invoice due.";
-$lang["account_already_exists_for_your_company_name"] = "Account already exists for your company name.";
+$lang["account_already_exists_for_your_company_name"] = "Account already exists for your Client name.";
 $lang["personal_language"] = "Personal language";
 $lang["no_messages_text"] = "You don't have any messages yet";
 $lang["no_users_found"] = "No users found";
 
-$lang["create_project"] = "Create project";
+$lang["create_project"] = "Create  Dietation Program";
 
 /* Version 2.2 */
 
@@ -1201,18 +1201,18 @@ $lang["email_piping_help_message"] = "Please make sure that, your IMap access is
 
 $lang["enable_rich_text_editor"] = "Enable rich text editor in comments/description";
 
-$lang["show_assigned_tasks_only"] = "Show assigned tasks only";
+$lang["show_assigned_tasks_only"] = "Show assigned Visits only";
 
 $lang["batch_update"] = "Batch update";
 $lang["cancel_selection"] = "Cancel selection";
 $lang["select_status"] = "Select status";
 
-$lang["add_multiple_tasks"] = "Add multiple tasks";
+$lang["add_multiple_tasks"] = "Add multiple Visits";
 $lang["save_and_add_more"] = "Save & add more";
-$lang["add_project_time"] = "Add project time";
+$lang["add_project_time"] = "Add  Dietation Program time";
 $lang["add_to_do"] = "Add to do";
 $lang["hide_menus_from_topbar"] = "Hide menus from topbar";
-$lang["favorite_projects"] = "Favorite projects";
+$lang["favorite_projects"] = "Favorite  Dietation Programs";
 $lang["favorite_clients"] = "Favorite clients";
 $lang["dashboard_customization"] = "Dashboard customization";
 $lang["quick_add"] = "Quick add";
@@ -1227,8 +1227,8 @@ $lang["drive_activation_help_message"] = "From now on, all files will be uploade
 $lang["mark_all_as_read"] = "Mark all as read";
 $lang["marked_all_notifications_as_read"] = "Marked all notifications as read";
 
-$lang["project_completed"] = "Project completed";
-$lang["notification_project_completed"] = "Completed a project";
+$lang["project_completed"] = " Dietation Program completed";
+$lang["notification_project_completed"] = "Completed a  Dietation Program";
 
 $lang["google_drive_client_id"] = "Client ID";
 $lang["google_drive_client_secret"] = "Client secret";
@@ -1246,7 +1246,7 @@ $lang["unauthorized"] = "Unauthorized";
 
 $lang["not_clocked_id_yet"] = "Not clocked in yet";
 
-$lang["create_estimate_request"] = "Create estimate request";
+$lang["create_estimate_request"] = "Create 24HR Report request";
 
 $lang["in_last_number_of_days"] = "In last %s days";
 $lang["in_last_number_of_month"] = "In last %s month";
@@ -1264,9 +1264,9 @@ $lang["unknown_client"] = "Unknown client";
 
 $lang["income_expenses_widget_help_message"] = "This report is only usable if you are using single currency.";
 
-$lang["assign_myself_in_this_ticket"] = "Assign myself in this ticket";
+$lang["assign_myself_in_this_ticket"] = "Assign myself in this Patient Assessment";
 
-$lang["create_new_task"] = "Create new task";
+$lang["create_new_task"] = "Create new Visit";
 
 $lang["default_due_date_after_billing_date"] = "Default due date after billing date";
 
@@ -1281,8 +1281,8 @@ $lang["all_timesheets_statistics"] = "All timesheets statistics";
 
 $lang["no_field_has_selected"] = "No field has selected!";
 
-$lang["imap_help_message_1"] = "You can setup an email address to create the tickets automatically when you receive any emails at that address.";
-$lang["imap_help_message_2"] = "Please note that, the system will create tickets based on the unread emails. After creating the ticket, the emails will be marked as read. To get the replies in the same tickets, the system will check the ticket ID in the email subject. If there is no ticket ID in the subject, that will be considered as a new ticket. You can setup the email subject from the";
+$lang["imap_help_message_1"] = "You can setup an email address to create the Patient Assessments automatically when you receive any emails at that address.";
+$lang["imap_help_message_2"] = "Please note that, the system will create Patient Assessments based on the unread emails. After creating the Patient Assessment, the emails will be marked as read. To get the replies in the same Patient Assessments, the system will check the Patient Assessment ID in the email subject. If there is no Patient Assessment ID in the subject, that will be considered as a new Patient Assessment. You can setup the email subject from the";
 $lang["imap_error_credentials_message"] = "Error! Can't connect with the imap using the credentials.";
 
 $lang["client_message_own_contacts"] = "Client can send/receive message to/from own contacts?";
@@ -1299,26 +1299,26 @@ $lang["cancelled_by"] = "Cancelled by";
 $lang["test_push_notification"] = "Test push notification";
 $lang["notification_test_push_notification"] = "It's a demo push notification";
 $lang["push_notification_error_message"] = "Error! Can't connect with the Pusher using the credentials.";
-$lang["clone_estimate"] = "Clone Estimate";
+$lang["clone_estimate"] = "Clone 24HR Report";
 
 $lang["import_clients"] = "Import clients";
 $lang["download_sample_file"] = "Download sample file";
 
-$lang["estimate_settings"] = "Estimate Settings";
-$lang["estimate_logo"] = "Estimate Logo";
-$lang["estimate_color"] = "Estimate Color";
-$lang["initial_number_of_the_estimate"] = "Initial number of the estimate";
-$lang["the_estimates_id_must_be_larger_then_last_estimate_id"] = "The estimates ID must be larger then last estimate ID.";
+$lang["estimate_settings"] = "24HR Report Settings";
+$lang["estimate_logo"] = "24HR Report Logo";
+$lang["estimate_color"] = "24HR Report Color";
+$lang["initial_number_of_the_estimate"] = "Initial number of the 24HR Report";
+$lang["the_estimates_id_must_be_larger_then_last_estimate_id"] = "The 24HR Reports ID must be larger then last estimate ID.";
 
 $lang["send_to_client"] = "Send to client";
-$lang["estimate_sent_message"] = "The estimate has been sent!";
-$lang["send_estimate_bcc_to"] = "When sending estimate to client, send BCC to";
+$lang["estimate_sent_message"] = "The 24HR Report has been sent!";
+$lang["send_estimate_bcc_to"] = "When sending 24HR Report to client, send BCC to";
 
-$lang["task_settings"] = "Task settings";
-$lang["enable_recurring_option_for_tasks"] = "Enable recurring option for tasks";
+$lang["task_settings"] = "Visit settings";
+$lang["enable_recurring_option_for_tasks"] = "Enable recurring option for Visits";
 $lang["past_recurring_date_error_message_title_for_tasks"] = "The selected start date and repeat type returns a past date.";
-$lang["recurring_task_created_via_cron_job"] = "Recurring task created via Cron Job";
-$lang["notification_recurring_task_created_via_cron_job"] = "New task created";
+$lang["recurring_task_created_via_cron_job"] = "Recurring Visit created via Cron Job";
+$lang["notification_recurring_task_created_via_cron_job"] = "New Visit created";
 $lang["repeat_type"] = "Repeat type";
 $lang["lead_status"] = "Lead status";
 $lang["add_lead_status"] = "Add lead status";
@@ -1342,10 +1342,10 @@ $lang["lead_created"] = "Lead created";
 $lang["notification_lead_created"] = "Created a new lead.";
 $lang["client_created_from_lead"] = "Client created from lead";
 $lang["notification_client_created_from_lead"] = "Converted a lead to client.";
-$lang["project_deadline"] = "Project deadline";
-$lang["task_deadline"] = "Task deadline";
+$lang["project_deadline"] = " Dietation Program end date";
+$lang["task_deadline"] = "Visit end date";
 $lang["event_type"] = "Event type";
-$lang["delete_estimate_form"] = "Delete estimate form";
+$lang["delete_estimate_form"] = "Delete 24HR Report form";
 $lang["calendar_event_modified"] = "Calendar event modified";
 $lang["notification_calendar_event_modified"] = "Modified an event.";
 
@@ -1354,13 +1354,13 @@ $lang["lead_created_at"] = "Lead created at";
 $lang["past_lead_information"] = "Past lead information";
 $lang["last_status"] = "Last status";
 $lang["migrated_to_client_at"] = "Migrated to client at";
-$lang["edit_estimate_form"] = "Edit estimate form";
+$lang["edit_estimate_form"] = "Edit 24HR Report form";
 
 $lang["please_upload_a_excel_file"] = "Please upload a excel file.";
 $lang["back"] = "Back";
 
 $lang["import_client_error_header"] = "There has an invalid header. The indicated field should be <b>%s</b>.";
-$lang["import_client_error_company_name_field_required"] = "Company name field is required.";
+$lang["import_client_error_company_name_field_required"] = "Client name field is required.";
 $lang["import_client_error_contact_name"] = "Contact first name and last name is both required to add a client contact.";
 $lang["import_client_error_contact_email"] = "Contact email is required and should be unique to add a client contact.";
 $lang["error"] = "Error";
@@ -1372,10 +1372,10 @@ $lang["clone_invoice"] = "Clone Invoice";
 $lang["copy_items"] = "Copy items";
 $lang["copy_discount"] = "Copy discount";
 
-$lang["clone_task"] = "Clone task";
+$lang["clone_task"] = "Clone Visit";
 $lang["copy_checklist"] = "Copy checklist";
 
-$lang["auto_assign_estimate_request_to"] = "Auto assign estimate request to";
+$lang["auto_assign_estimate_request_to"] = "Auto assign 24HR Report request to";
 
 $lang["email_template_variable"] = "Email template variable";
 $lang["example_variable_name"] = "Example_variable_name";
@@ -1397,26 +1397,26 @@ $lang["lead_details"] = "Lead details";
 $lang["can_access_leads_information"] = "Can access lead's information?";
 $lang["lead_info"] = "Lead info";
 
-$lang["send_task_reminder_on_the_day_of_deadline"] = "Send task reminder on the day of deadline";
-$lang["send_task_deadline_pre_reminder"] = "Send task deadline pre reminder";
-$lang["send_task_deadline_overdue_reminder"] = "Send task deadline overdue reminder";
+$lang["send_task_reminder_on_the_day_of_deadline"] = "Send Visit reminder on the day of end date";
+$lang["send_task_deadline_pre_reminder"] = "Send Visit end date pre reminder";
+$lang["send_task_deadline_overdue_reminder"] = "Send Visit end date overdue reminder";
 
-$lang["project_task_deadline_reminder"] = "Project task deadline reminder";
+$lang["project_task_deadline_reminder"] = " Dietation Program Visit end date reminder";
 
-$lang["project_task_deadline_pre_reminder"] = "Project task deadline pre reminder";
-$lang["project_task_deadline_overdue_reminder"] = "Project task deadline overdue reminder";
-$lang["project_task_reminder_on_the_day_of_deadline"] = "Project task reminder on the day of deadline";
+$lang["project_task_deadline_pre_reminder"] = " Dietation Program Visit end date pre reminder";
+$lang["project_task_deadline_overdue_reminder"] = " Dietation Program Visit end date overdue reminder";
+$lang["project_task_reminder_on_the_day_of_deadline"] = " Dietation Program Visit reminder on the day of end date";
 
-$lang["notification_project_task_deadline_pre_reminder"] = "Reminder: Some tasks needs to be finished soon.";
-$lang["notification_project_task_deadline_overdue_reminder"] = "Reminder: Task's deadline overdue.";
-$lang["notification_project_task_reminder_on_the_day_of_deadline"] = "Reminder: Some tasks needs to be finished today.";
+$lang["notification_project_task_deadline_pre_reminder"] = "Reminder: Some Visits needs to be finished soon.";
+$lang["notification_project_task_deadline_overdue_reminder"] = "Reminder: Visit's end date overdue.";
+$lang["notification_project_task_reminder_on_the_day_of_deadline"] = "Reminder: Some Visits needs to be finished today.";
 
 $lang["mark_as_public"] = "Mark as public";
 $lang["note_details"] = "Note details";
 $lang["public_note_by"] = "Public note by";
 $lang["marked_as_public"] = "Marked as public";
 
-$lang["client_can_view_activity"] = "Client can view project activity";
+$lang["client_can_view_activity"] = "Client can view  Dietation Program activity";
 
 $lang["event_settings"] = "Event settings";
 $lang["enable_google_calendar_api"] = "Enable Google calendar API";
@@ -1440,14 +1440,14 @@ $lang["google_calendar_help_message"] = "You'll get your Google Calendar events 
 
 $lang["footer"] = "Footer";
 $lang["footer_description_message"] = "This footer will be visible on all public pages.";
-$lang["estimate_footer"] = "Estimate Footer";
+$lang["estimate_footer"] = "24HR Report Footer";
 $lang["enable_footer"] = "Enable footer";
 $lang["footer_menus"] = "Footer menus";
 $lang["footer_copyright_text"] = "Copyright text";
 $lang["edit_footer_menu"] = "Edit footer menu";
 
 $lang["menu_name"] = "Menu name";
-$lang["task_point_range"] = "Task point range";
+$lang["task_point_range"] = "Visit point range";
 
 $lang["gdpr"] = "GDPR";
 $lang["enable_gdpr"] = "Enable GDPR";
@@ -1470,31 +1470,31 @@ $lang["add_page"] = "Add page";
 $lang["delete_page"] = "Delete page";
 $lang["page_url_cant_duplicate"] = "Page URL can't duplicate.";
 
-$lang["sub_tasks"] = "Sub tasks";
-$lang["sub_task"] = "Sub task";
-$lang["create_a_sub_task"] = "Create a sub task";
+$lang["sub_tasks"] = "Sub Visits";
+$lang["sub_task"] = "Sub Visit";
+$lang["create_a_sub_task"] = "Create a sub Visit";
 $lang["create"] = "Create";
-$lang["parent_task"] = "Parent task";
+$lang["parent_task"] = "Parent Visit";
 
-$lang["this_task_blocked_by"] = "This task blocked by";
-$lang["this_task_blocking"] = "This task blocking";
+$lang["this_task_blocked_by"] = "This Visit blocked by";
+$lang["this_task_blocking"] = "This Visit blocking";
 $lang["add_dependency"] = "Add dependency";
 $lang["blocked_by"] = "Blocked by";
 $lang["blocking"] = "Blocking";
 $lang["blocked"] = "Blocked";
 $lang["dependency"] = "Dependency";
 
-$lang["estimate_request_settings"] = "Estimate request settings";
-$lang["hidden_client_fields_on_public_estimate_requests"] = "Hide fields from public estimate request forms";
+$lang["estimate_request_settings"] = "24HR Report request settings";
+$lang["hidden_client_fields_on_public_estimate_requests"] = "Hide fields from public 24HR Report request forms";
 $lang["hidden_client_fields"] = "Hidden client fields";
 
 $lang["account"] = "Account";
 $lang["common"] = "Common";
 
 $lang["tax_deducted_at_source"] = "TDS";
-$lang["auto_close_ticket_after"] = "Auto close ticket after"; //after x days
+$lang["auto_close_ticket_after"] = "Auto close Patient Assessment after"; //after x days
 $lang["disable_user_invitation_option_by_clients"] = "Disable user invitation option by clients";
-$lang["create_tickets_only_by_registered_emails"] = "Create tickets only by registered emails";
+$lang["create_tickets_only_by_registered_emails"] = "Create Patient Assessments only by registered emails";
 $lang["icon"] = "Icon";
 $lang["help_articles"] = "Help articles";
 $lang["help_categories"] = "Help categories";
@@ -1537,11 +1537,11 @@ $lang["link_to_new_client"] = "Link to new client";
 $lang["client_can_view_files"] = "Client can view files?";
 $lang["client_can_add_files"] = "Client can add files?";
 $lang["client_can_view_activity"] = "Client can view project activity?";
-$lang["client_can_edit_projects"] = "Client can edit projects?";
+$lang["client_can_edit_projects"] = "Client can edit  Dietation Programs?";
 
 $lang["view_pdf"] = "View PDF";
 
-$lang["add_new_task"] = "Add new task";
+$lang["add_new_task"] = "Add new Visit";
 $lang["disable_keyboard_shortcuts"] = "Disable keyboard shortcuts";
 $lang["keyboard_shortcuts_info"] = "Keyboard shortcuts info";
 $lang["edit_shortcuts"] = "Edit shortcuts";
@@ -1575,8 +1575,8 @@ $lang["pushed_by"] = "Pushed by";
 $lang["committed_by"] = "Committed by";
 $lang["add_webhook_in_your_repository_at"] = "Add webhook in your repository: ";
 $lang["webhook_listener_link"] = "Webhook listener link";
-$lang["enable_bitbucket_commit_logs_in_tasks"] = "Enable bitbucket commit logs in tasks";
-$lang["bitbucket_info_text"] = "To link the commits with tasks, there should be a # and task ID at the end of each commit messages. Ex: This is a commit of Task #10.";
+$lang["enable_bitbucket_commit_logs_in_tasks"] = "Enable bitbucket commit logs in Visits";
+$lang["bitbucket_info_text"] = "To link the commits with Visits, there should be a # and Visit ID at the end of each commit messages. Ex: This is a commit of Task #10.";
 
 $lang["bitbucket_push_received"] = "Bitbucket notification received";
 $lang["notification_bitbucket_push_received"] = "Bitbucket notification received.";
@@ -1589,31 +1589,31 @@ $lang["can_send_messages_to_specific_members_or_teams"] = "Can send messages to 
 $lang["embed"] = "Embed";
 $lang["copy"] = "Copy";
 
-$lang["estimate_prefix"] = "Estimate prefix";
+$lang["estimate_prefix"] = "24HR Report prefix";
 
 $lang["likes"] = "Likes";
 
 $lang["pusher"] = "Pusher";
 $lang["enable_chat_via_pusher"] = "Enable chat via pusher";
 
-$lang["tasks_list"] = "Tasks List";
-$lang["tasks_kanban"] = "Tasks Kanban";
-$lang["set_project_tab_order"] = "Set project tab order";
-$lang["project_tab_order"] = "Project tab order";
+$lang["tasks_list"] = "Visits List";
+$lang["tasks_kanban"] = "Visits Kanban";
+$lang["set_project_tab_order"] = "Set  Dietation Program tab order";
+$lang["project_tab_order"] = " Dietation Program tab order";
 $lang["project_tab_order_help_message"] = "Please note that, this tabs will show as per user's permissions.";
 $lang["project_tab_order_help_message_of_client"] = "Please note that, this tabs will show as per client contact's permissions.";
-$lang["client_projects"] = "Projects";
+$lang["client_projects"] = " Dietation Programs";
 
-$lang["ticket_assigned"] = "Ticket assigned";
-$lang["notification_ticket_assigned"] = "Assigned a ticket to %s";
+$lang["ticket_assigned"] = "Patient Assessment assigned";
+$lang["notification_ticket_assigned"] = "Assigned a Patient Assessment to %s";
 
 $lang["disable_access_favorite_project_option_for_clients"] = "Disable access favorite project option for clients";
 $lang["disable_editing_left_menu_by_clients"] = "Disable editing left menu by clients";
 $lang["disable_topbar_menu_customization"] = "Disable topbar menu customization";
 $lang["disable_dashboard_customization_by_clients"] = "Disable dashboard customization by clients";
 
-$lang["task_start_date"] = "Task start date";
-$lang["project_start_date"] = "Project start date";
+$lang["task_start_date"] = "Visit start date";
+$lang["project_start_date"] = " Dietation Program start date";
 $lang["show_on_kanban_card"] = "Show on kanban card";
 
 $lang["original_expense"] = "Original expense";
@@ -1627,7 +1627,7 @@ $lang["visible_to_clients_only"] = "Visible to clients only";
 
 $lang["open_in_new_tab"] = "Open in new tab";
 
-$lang["client_can_delete_own_files_in_project"] = "Client can delete own files in project";
+$lang["client_can_delete_own_files_in_project"] = "Client can delete own files in  Dietation Program";
 
 $lang["enable_slack"] = "Enable slack";
 $lang["get_the_webhook_url_of_your_app_from_here"] = "Get the Webhook URL of your App from here:";
@@ -1635,19 +1635,19 @@ $lang["slack_webhook_url"] = "Webhook URL";
 $lang["send_a_test_message"] = "Send a test message";
 $lang["notification_test_slack_notification"] = "This is a demo message.";
 $lang["slack_notification_error_message"] = "Error! Can't connect with the Slack using the credentials.";
-$lang["dont_send_any_project_related_notifications_to_this_channel"] = "Don't send any project related notifications to this channel";
+$lang["dont_send_any_project_related_notifications_to_this_channel"] = "Don't send any  Dietation Program related notifications to this channel";
 $lang["save_and_send_a_test_message"] = "Save & send a test message";
 
-$lang["copy_sub_tasks"] = "Copy sub tasks";
+$lang["copy_sub_tasks"] = "Copy sub Visits";
 
-$lang["can_update_only_assigned_tasks_status"] = "Can update only assigned tasks status";
+$lang["can_update_only_assigned_tasks_status"] = "Can update only assigned Visits status";
 
 $lang["import_leads"] = "Import leads";
 $lang["import_lead_error_contact_name"] = "Contact first name and last name is both required to add a lead contact.";
 
-$lang["deadline_must_be_equal_or_greater_than_start_date"] = "Deadline must be equal or greater than Start date.";
+$lang["deadline_must_be_equal_or_greater_than_start_date"] = "end date must be equal or greater than Start date.";
 
-$lang["enable_github_commit_logs_in_tasks"] = "Enable github commit logs in tasks";
+$lang["enable_github_commit_logs_in_tasks"] = "Enable github commit logs in Visits";
 $lang["github_push_received"] = "GitHub notification received";
 $lang["notification_github_push_received"] = "GitHub notification received.";
 
@@ -1661,7 +1661,7 @@ $lang["days_view"] = "Days view";
 $lang["weeks_view"] = "Weeks view";
 $lang["months_view"] = "Months view";
 
-$lang["move_all_tasks_to_to_do"] = "Move all tasks to To Do";
+$lang["move_all_tasks_to_to_do"] = "Move all Visits to To Do";
 
 $lang["started"] = "Started";
 
@@ -1670,9 +1670,9 @@ $lang["weekends"] = "Weekends";
 $lang["invited_client_contact_signed_up"] = "Invited client contact signed up";
 $lang["notification_invited_client_contact_signed_up"] = "Invited client contact signed up.";
 
-$lang["ticket_templates"] = "Ticket templates";
-$lang["ticket_template"] = "Ticket template";
-$lang["tickets_list"] = "Tickets list";
+$lang["ticket_templates"] = "Patient Assessment templates";
+$lang["ticket_template"] = "Patient Assessment template";
+$lang["tickets_list"] = "Patient Assessments list";
 $lang["add_template"] = "Add template";
 $lang["edit_template"] = "Edit template";
 $lang["insert_template"] = "Insert template";
@@ -1680,7 +1680,7 @@ $lang["private_template"] = "Private template";
 
 $lang["requested_by"] = "Requested by";
 
-$lang["create_new_projects_automatically_when_estimates_gets_accepted"] = "Create new projects automatically when estimates gets accepted";
+$lang["create_new_projects_automatically_when_estimates_gets_accepted"] = "Create new  Dietation Programs automatically when 24HR Reports gets accepted";
 
 $lang["typing"] = "Typing";
 
@@ -1715,7 +1715,7 @@ $lang["paytm_checksum_hash_error_message"] = "Couldn't generate Checksum Hash wi
 
 $lang["testing_environment"] = "Testing environment";
 
-$lang["auto_reply_to_tickets"] = "Auto reply to tickets";
+$lang["auto_reply_to_tickets"] = "Auto reply to Patient Assessments";
 
 $lang["total_time_logged"] = "Total time logged";
 $lang["total_duration"] = "Total duration";
@@ -1767,7 +1767,7 @@ $lang["process_order_info_message"] = "You are about to create the order. Please
 
 $lang["order_creator_contact"] = "Order creator contact";
 
-$lang["create_estimate"] = "Create Estimate";
+$lang["create_estimate"] = "Create 24HR Report";
 $lang["include_all_items_of_this_order"] = "Include all items of this order";
 
 $lang["new_order_received"] = "New order received";
@@ -1795,9 +1795,9 @@ $lang["recently_meaning"] = "Recently meaning";
 
 $lang["quick_filters"] = "Quick filters";
 
-$lang["has_open_projects"] = "Has open projects";
-$lang["has_completed_projects"] = "Has completed projects";
-$lang["has_any_hold_projects"] = "Has any hold projects";
+$lang["has_open_projects"] = "Has open  Dietation Programs";
+$lang["has_completed_projects"] = "Has completed  Dietation Programs";
+$lang["has_any_hold_projects"] = "Has any hold  Dietation Programs";
 
 $lang["has_unpaid_invoices"] = "Has unpaid invoices";
 $lang["has_overdue_invoices"] = "Has overdue invoices";
@@ -1806,24 +1806,24 @@ $lang["assignee"] = "Assignee";
 
 $lang["upload_and_crop"] = "Upload and crop";
 
-$lang["active_members_on_projects"] = "Active members on projects";
+$lang["active_members_on_projects"] = "Active members on  Dietation Programs";
 
 /* Version 2.6.1 */
 
-$lang["open_tickets_list"] = "Open tickets list";
+$lang["open_tickets_list"] = "Open Patient Assessments list";
 
 $lang["login_attempt_failed"] = "Login attempt failed";
 $lang["profile_image_error_message"] = "The image should be 200x200px.";
 
 $lang["re_captcha_info_text"] = "Before you logout, please open a new browser and make sure the reCaptcha is working.";
-$lang["yes_assigned_tickets_only"] = "Yes, assigned tickets only";
+$lang["yes_assigned_tickets_only"] = "Yes, assigned Patient Assessments only";
 $lang["no_such_custom_field_found"] = "No such custom field found.";
 $lang["open_in_google_calendar"] = "Open in google calendar";
 
-$lang["enable_embedded_form_to_get_tickets"] = "Enable embedded form to get tickets";
+$lang["enable_embedded_form_to_get_tickets"] = "Enable embedded form to get Patient Assessments";
 $lang["submit_your_request"] = "Submit your request";
 $lang["submit"] = "Submit";
-$lang["ticket_submission_message"] = "Your ticket has been submitted successfully!";
+$lang["ticket_submission_message"] = "Your Patient Assessment has been submitted successfully!";
 $lang["your_email"] = "Your email";
 $lang["your_name"] = "Your name";
 
@@ -1831,4 +1831,4 @@ $lang["item_categories"] = "Item categories";
 $lang["edit_items_category"] = "Edit items category";
 $lang["delete_items_category"] = "Delete items category";
 
-$lang["create_recurring_tasks_before"] = "Create recurring tasks before";
+$lang["create_recurring_tasks_before"] = "Create recurring Visits before";

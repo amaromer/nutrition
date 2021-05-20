@@ -21,6 +21,16 @@
         </div>
     </div>
     <div class="form-group">
+        <label for="estimate_unit_type" class=" col-md-3"><?php echo "
+        Composition of Item per 100 gm"; ?></label>
+        <div class="col-md-9">
+            <div><h5>Protien:</h5><span id='protien'></span></div>
+            <div><h5>Carb:</h5><span id='carb'></span></div>
+            <div><h5>Fat:</h5><span id='fat'></span></div>
+            <div><h5>Energy:</h5><span id='energy'></span></div>
+        </div>
+    </div>
+    <div class="form-group">
         <label for="estimate_item_description" class="col-md-3"><?php echo lang('description'); ?></label>
         <div class=" col-md-9">
             <?php
@@ -35,6 +45,7 @@
             ?>
         </div>
     </div>
+
     <div class="form-group">
         <label for="estimate_item_quantity" class=" col-md-3"><?php echo lang('quantity'); ?></label>
         <div class="col-md-9">
@@ -44,14 +55,16 @@
                 "name" => "estimate_item_quantity",
                 "value" => $model_info->quantity ? to_decimal_format($model_info->quantity) : "",
                 "class" => "form-control",
-                "placeholder" => lang('quantity'),
+                "placeholder" => lang('quantity') . " gm",
                 "data-rule-required" => true,
                 "data-msg-required" => lang("field_required"),
             ));
             ?>
         </div>
     </div>
-    <div class="form-group">
+
+
+    <!-- <div class="form-group">
         <label for="estimate_unit_type" class=" col-md-3"><?php echo lang('unit_type'); ?></label>
         <div class="col-md-9">
             <?php
@@ -64,8 +77,8 @@
             ));
             ?>
         </div>
-    </div>
-    <div class="form-group">
+    </div> -->
+  <!--   <div class="form-group">
         <label for="estimate_item_rate" class=" col-md-3"><?php echo lang('rate'); ?></label>
         <div class="col-md-9">
             <?php
@@ -80,7 +93,7 @@
             ));
             ?>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <div class="modal-footer">
@@ -152,6 +165,13 @@
                             if (!$("#estimate_item_description").val()) {
                                 $("#estimate_item_description").val(response.item_info.description);
                             }
+
+
+                                $("#carb").text(response.item_info.carb);
+                                $("#protien").text(response.item_info.protien);
+                                $("#fat").text(response.item_info.fat);
+                                $("#energy").text(response.item_info.energy);
+
 
                             if (!$("#estimate_unit_type").val()) {
                                 $("#estimate_unit_type").val(response.item_info.unit_type);

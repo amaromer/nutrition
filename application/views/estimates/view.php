@@ -10,12 +10,12 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li role="presentation"><?php echo anchor(get_uri("estimates/download_pdf/" . $estimate_info->id), "<i class='fa fa-download'></i> " . lang('download_pdf'), array("title" => lang('download_pdf'),)); ?> </li>
+                        <!-- <li role="presentation"><?php echo anchor(get_uri("estimates/download_pdf/" . $estimate_info->id), "<i class='fa fa-download'></i> " . lang('download_pdf'), array("title" => lang('download_pdf'),)); ?> </li>
                         <li role="presentation"><?php echo anchor(get_uri("estimates/download_pdf/" . $estimate_info->id . "/view"), "<i class='fa fa-file-pdf-o'></i> " . lang('view_pdf'), array("title" => lang('view_pdf'), "target" => "_blank")); ?> </li>
-                        <li role="presentation"><?php echo anchor(get_uri("estimates/preview/" . $estimate_info->id . "/1"), "<i class='fa fa-search'></i> " . lang('estimate_preview'), array("title" => lang('estimate_preview')), array("target" => "_blank")); ?> </li>
-                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><?php echo anchor(get_uri("estimates/preview/" . $estimate_info->id . "/1"), "<i class='fa fa-search'></i> " . lang('estimate_preview'), array("title" => lang('estimate_preview')), array("target" => "_blank")); ?> </li> -->
+                        <!-- <li role="presentation" class="divider"></li> -->
                         <li role="presentation"><?php echo modal_anchor(get_uri("estimates/modal_form"), "<i class='fa fa-edit'></i> " . lang('edit_estimate'), array("title" => lang('edit_estimate'), "data-post-id" => $estimate_info->id, "role" => "menuitem", "tabindex" => "-1")); ?> </li>
-                        <li role="presentation"><?php echo modal_anchor(get_uri("estimates/modal_form"), "<i class='fa fa-copy'></i> " . lang('clone_estimate'), array("data-post-is_clone" => true, "data-post-id" => $estimate_info->id, "title" => lang('clone_estimate'))); ?></li>
+                        <!-- <li role="presentation"><?php echo modal_anchor(get_uri("estimates/modal_form"), "<i class='fa fa-copy'></i> " . lang('clone_estimate'), array("data-post-is_clone" => true, "data-post-id" => $estimate_info->id, "title" => lang('clone_estimate'))); ?></li> -->
 
                         <!--don't show status changing option for leads-->
                         <?php
@@ -23,6 +23,7 @@
                             if ($estimate_status == "draft") {
                                 ?>
                                 <li role="presentation"><?php echo modal_anchor(get_uri("estimates/send_estimate_modal_form/" . $estimate_info->id), "<i class='fa fa-send'></i> " . lang('send_to_client'), array("title" => lang('send_to_client'), "data-post-id" => $estimate_info->id, "role" => "menuitem", "tabindex" => "-1")); ?> </li>
+                                <li role="presentation"><?php echo ajax_anchor(get_uri("estimates/update_estimate_status/" . $estimate_info->id . "/accepted"), "<i class='fa fa-check-circle'></i> " . lang('mark_as_accepted'), array("data-reload-on-success" => "1")); ?> </li>
                             <?php } else if ($estimate_status == "sent") { ?>
                                 <li role="presentation"><?php echo modal_anchor(get_uri("estimates/send_estimate_modal_form/" . $estimate_info->id), "<i class='fa fa-send'></i> " . lang('send_to_client'), array("title" => lang('send_to_client'), "data-post-id" => $estimate_info->id, "role" => "menuitem", "tabindex" => "-1")); ?> </li>
                                 <li role="presentation"><?php echo ajax_anchor(get_uri("estimates/update_estimate_status/" . $estimate_info->id . "/accepted"), "<i class='fa fa-check-circle'></i> " . lang('mark_as_accepted'), array("data-reload-on-success" => "1")); ?> </li>
@@ -77,9 +78,9 @@
                         "estimate_info" => $estimate_info
                     );
                     if ($style === "style_2") {
-                        $this->load->view('estimates/estimate_parts/header_style_2.php', $data);
+                       // $this->load->view('estimates/estimate_parts/header_style_2.php', $data);
                     } else {
-                        $this->load->view('estimates/estimate_parts/header_style_1.php', $data);
+                        //$this->load->view('estimates/estimate_parts/header_style_1.php', $data);
                     }
                     ?>
 
@@ -94,7 +95,7 @@
                     <div class="col-sm-8">
 
                     </div>
-                    <div class="pull-right pr15" id="estimate-total-section">
+                   <div class="pull-right pr15" id="estimate-total-section">
                         <?php $this->load->view("estimates/estimate_total_section"); ?>
                     </div>
                 </div>
@@ -119,10 +120,15 @@
             displayLength: 100,
             columns: [
                 {visible: false, searchable: false},
+                {title: "item cat"},
                 {title: "<?php echo lang("item") ?> ", "bSortable": false},
                 {title: "<?php echo lang("quantity") ?>", "class": "text-right w15p", "bSortable": false},
-                {title: "<?php echo lang("rate") ?>", "class": "text-right w15p", "bSortable": false},
-                {title: "<?php echo lang("total") ?>", "class": "text-right w15p", "bSortable": false},
+                {title: "Protien"},
+                {title: "Carb"},
+                {title: "Fat"},
+                {title: "Energy"},
+                //{title: "<?php echo lang("rate") ?>", "class": "text-right w15p", "bSortable": false},
+                //{title: "<?php echo lang("total") ?>", "class": "text-right w15p", "bSortable": false},
                 {title: "<i class='fa fa-bars'></i>", "class": "text-center option w100", "bSortable": false}
             ],
 
@@ -162,15 +168,15 @@
             },
 
             onDeleteSuccess: function (result) {
-                $("#estimate-total-section").html(result.estimate_total_view);
+              $("#estimate-total-section").html(result.estimate_total_view);
                 if (typeof updateInvoiceStatusBar == 'function') {
-                    updateInvoiceStatusBar(result.estimate_id);
+                   // updateInvoiceStatusBar(result.estimate_id);
                 }
             },
             onUndoSuccess: function (result) {
-                $("#estimate-total-section").html(result.estimate_total_view);
+              $("#estimate-total-section").html(result.estimate_total_view);
                 if (typeof updateInvoiceStatusBar == 'function') {
-                    updateInvoiceStatusBar(result.estimate_id);
+                   // updateInvoiceStatusBar(result.estimate_id);
                 }
             }
         });
@@ -181,7 +187,7 @@
             url: "<?php echo get_uri("estimates/get_estimate_status_bar"); ?>/" + estimateId,
             success: function (result) {
                 if (result) {
-                    $("#estimate-status-bar").html(result);
+                  $("#estimate-status-bar").html(result);
                 }
             }
         });

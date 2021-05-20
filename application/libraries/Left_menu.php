@@ -280,9 +280,9 @@ class Left_menu {
 
 
             if ($this->ci->login_user->is_admin || $access_client) {
-                //$sidebar_menu["clients"] = array("name" => "clients", "url" => "clients", "class" => "fa-briefcase");
-                $sidebar_menu["patients"] = array("name" => "patients", "url" => "patients", "class" => "fa-briefcase");
-                $sidebar_menu["patient_assessment"] = array("name" => "patient_assessment", "url" => "patient_assessment", "class" => "fa-briefcase");
+                $sidebar_menu["clients"] = array("name" => "clients", "url" => "clients", "class" => "fa-briefcase");
+                // $sidebar_menu["patients"] = array("name" => "clients", "url" => "clients", "class" => "fa-briefcase");
+                // $sidebar_menu["patient_assessment"] = array("name" => "patient_assessment", "url" => "patient_assessment", "class" => "fa-briefcase");
             }
 
             if (get_setting("module_lead") == "1" && ($this->ci->login_user->is_admin || $access_lead)) {

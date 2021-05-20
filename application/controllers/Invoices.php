@@ -71,7 +71,7 @@ class Invoices extends MY_Controller {
 
 
         //check if estimate_id/order_id posted. if found, generate related information
-        $estimate_id = $this->input->post('estimate_id');
+        $estimate_id = ""; //$this->input->post('estimate_id');
         $order_id = $this->input->post('order_id');
         $view_data['estimate_id'] = $estimate_id;
         $view_data['order_id'] = $order_id;

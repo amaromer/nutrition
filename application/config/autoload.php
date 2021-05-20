@@ -184,6 +184,7 @@ $autoload['model'] = array(
     'Labels_model',
     'Verification_model',
     'Item_categories_model',
-    'Patients_model'
+    'Patients_model',
+    'Food_item_model'
 );
 
